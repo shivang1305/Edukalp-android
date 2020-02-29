@@ -17,7 +17,7 @@ import com.example.edukalp.R;
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
-    private Button btn_unity_1, btn_unity_2, btn_unity_3;
+    private Button btn_unity_3;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -26,31 +26,8 @@ public class HomeFragment extends Fragment {
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        btn_unity_1 = root.findViewById(R.id.btn_unity_1);
-        btn_unity_1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent launchIntent = getActivity().getPackageManager().getLaunchIntentForPackage("com.hovar.tablesvirtualbutton");
-                if(launchIntent!=null){
-                    startActivity(launchIntent);
-                }
-                else
-                    Toast.makeText(getActivity(), "There is a problem", Toast.LENGTH_SHORT).show();
-            }
-        });
 
-        btn_unity_2 = root.findViewById(R.id.btn_unity_2);
-        btn_unity_2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent launchIntent = getActivity().getPackageManager().getLaunchIntentForPackage("com.Microsoft.SpeechSDKTest");
-                if(launchIntent!=null){
-                    startActivity(launchIntent);
-                }
-                else
-                    Toast.makeText(getActivity(), "There is a problem", Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
         btn_unity_3 = root.findViewById(R.id.btn_unity_3);
         btn_unity_3.setOnClickListener(new View.OnClickListener() {

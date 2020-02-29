@@ -4,31 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main2Activity"
+    tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <Button
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="Mathematics Tables Practice"
+        android:layout_height="wrap_content"
         android:padding="25dp"
-        android:layout_marginTop="100dp"
-        android:id="@+id/btn_unity_1"/>
+        android:layout_marginTop="50dp"
+        android:text="This feature is especially designed for kids up to age of 4. This feature will promote interactive learning through 3D animation characters and sounds in the most efficient way possible."
+        android:textSize="25sp"
+        android:textStyle="bold"/>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="Speech Recognizer and Translator"
+        android:id="@+id/btn_unity_3"
+        android:layout_width="320dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_btn"
         android:padding="25dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/btn_unity_2"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="Alphabets, Solar System and Rhymes "
-        android:padding="25dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/btn_unity_3"/>
+        android:text="Alphabets, Solar System and Rhymes " />
 
 </LinearLayout>

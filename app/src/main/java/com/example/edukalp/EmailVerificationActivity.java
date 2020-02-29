@@ -46,11 +46,11 @@ public class EmailVerificationActivity extends AppCompatActivity {
                     {
                         user.sendEmailVerification();
                         Toast.makeText(EmailVerificationActivity.this, "Verification Email Sent", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(EmailVerificationActivity.this, MainActivity.class));
+//                        startActivity(new Intent(EmailVerificationActivity.this, MainActivity.class));
                     }
                     else if(user.isEmailVerified())
                     {
-                        startActivity(new Intent(EmailVerificationActivity.this, MainActivity.class));
+//                        startActivity(new Intent(EmailVerificationActivity.this, MainActivity.class));
                         Toast.makeText(EmailVerificationActivity.this, "Enter Main Activity now", Toast.LENGTH_SHORT).show();
                     }
                 }
